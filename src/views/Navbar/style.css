@@ -1,0 +1,8 @@
+.header {
+  background: url(../public/assets/slider-1.png) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.header .navbar {
+    background-color: transparent !important;
+  }
