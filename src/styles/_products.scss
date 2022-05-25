@@ -1,0 +1,19 @@
+.section-products{
+    height: 768px;
+
+}
+
+.section-products-background{
+    background-image: url('../images/section3-image.png');
+    background-repeat: no-repeat;
+    margin-top: 104px;
+    margin-bottom: 112px;
+    padding-right: 0px;
+
+    .section-products-description{
+        background-color: #E0752F;
+        width: 471px;
+        height: 304px;
+
+    }
+}
