@@ -1,4 +1,3 @@
-//import "./index.scss"
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -22,10 +21,10 @@ function Navbar() {
             <a className="nav-link" href="/">
               Home
             </a>
-            <a className="nav-link" href="#about">About</a>
-            <a className="nav-link" href="#products">Products</a>
-            <a className="nav-link" href="#services">Services</a>
-            <a className="nav-link" href="#contact">Contact</a>
+            <a className="nav-link" href="#aboutlink">About</a>
+            <a className="nav-link" href="#productslink">Products</a>
+            <a className="nav-link" href="#serviceslink">Services</a>
+            <a className="nav-link" href="#contactlink">Contact</a>
           </div>
         </div>
       </div>

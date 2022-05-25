@@ -1,10 +1,13 @@
-.section-landing{
+/*.section-landing{
     color: white;
-    width: 1366px;
+    //width: 1366px;
     //height: 768px;
-    background-image: url('../images/slider-1.png');
-    //background-repeat: cover;
-    //background-position: center;
+    background-image: url('../images/slider-1@2x.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 
     .button-landing{
         top: 480px;
@@ -46,9 +49,10 @@
         opacity: 1;
         padding-bottom: 70px;
     }
-}
 
-.landing-content{
+
+/*.landing-content{
     height: 672px;
     margin-left: 0px;
-}
+}*/
+

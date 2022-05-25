@@ -4,15 +4,16 @@ import About from "./views/About";
 import Services from "./views/Services";
 import Contact from "./views/Contact";
 import Products from "./views/Products";
-//import "./App.css";
+import Footer from "./views/Footer";
 import "./index.scss";
 import "./styles/app.css";
 import "./styles/app.scss";
+import "./index.scss";
 
 
 function App() {
   return (
-    <div className="container">
+    <div class="container">
       <div className="row section-landing">
         <div className="row section-navbar section-navbar">
           <Navbar/>
@@ -27,10 +28,15 @@ function App() {
           </div>
         </div>
       </div>
+      <div id="aboutlink"></div>
       <About/>
+      <div id="productslink"></div>
       <Products/>
+      <div id="serviceslink"></div>
       <Services/>
+      <div id="contactlink"></div>
       <Contact/>
+      <Footer/>
     </div>
   );
 }

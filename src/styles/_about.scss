@@ -1,25 +1,32 @@
-.section-about{
+/*.section-about{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 167px;
+    //margin-top: 167px;
     margin-bottom: 164px;
+    //box-sizing:border-box;*/
 
     h2 {
-        font: normal normal 600 39px/45px Poppins;
+        font: normal normal 600 39px/45px Roboto;
         color: black;
+        margin-bottom: 1px;
+        padding-bottom: 1px;
 
-        > span {
-            display: block;
-            color: #E0752F;
-        }
+    }
+    .horange{
+        margin-top: 1px;
+        padding-top: 1px;
+        color: #E0752F;
+        margin-bottom: 100px;
     }
 
     p {
         font: normal normal normal 16px/28px Roboto;
         text-align: left;
+        color: black;
+        padding-bottom: 300px;
     }
-}
+
 .about-organge-bar{
 
     width: 32px;

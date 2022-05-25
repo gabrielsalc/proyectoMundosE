@@ -1,34 +1,12 @@
-@import '~bootstrap/scss/bootstrap.scss';
-
+body, html {
+    margin: 0px;
+    height:100%;
+    padding-left:0px;
+}
+.container{
+    padding: 0px;
+    margin: 0px;
+}
 .principal{
-    background-color: bisque;
-    background-position: center;
-}
-
-.landing{
-    width: 1920px;
-    height: 1080px;
-    //background-image: url('./images/slider-0.png');
-    background-repeat: no-repeat;
-    //background-position: center;
-}
-
-.about{
-    width: 1920px;
-    height: 1080px;
-}
-
-.products{
-    width: 1366px;
-    height: 768px;
-}
-
-.services{
-    width: 1366px;
-    height: 768px;
-}
-
-.contact{
-    width: 1366px;
-    height: 768px;
+    height: 100vh;
 }

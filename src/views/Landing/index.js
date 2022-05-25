@@ -2,6 +2,7 @@ import Navbar from "../Navbar";
 
 function Landing() {
   return (
+    <section class="principal">
     <div>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -33,6 +34,7 @@ function Landing() {
     </div>
       
     </div>
+    </section>
   );
 }
 
