@@ -7,6 +7,7 @@ import Products from "./views/Products";
 //import "./App.css";
 import "./index.scss";
 import "./styles/app.css";
+import "./styles/app.scss";
 
 
 function App() {
@@ -14,20 +15,22 @@ function App() {
     <div className="container">
       <div className="row section-landing">
         <div className="row section-navbar section-navbar">
-          <Navbar />
+          <Navbar/>
         </div>
         <div className="row landing-content" id="landing">
-          <div className="col-1"></div>
-          <div className="col-8">
-            <Landing />
+          <div className="col-1">
           </div>
-          <div className="col-3"></div>
+          <div className="col-8">
+            <Landing/>
+          </div>
+          <div className="col-3">
+          </div>
         </div>
       </div>
-      <About />
-      <Products></Products>
-      <Services></Services>
-      <Contact></Contact>
+      <About/>
+      <Products/>
+      <Services/>
+      <Contact/>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 function Services() {
   return (
-    <div className="row section-services">
+    <div className="section-services">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
