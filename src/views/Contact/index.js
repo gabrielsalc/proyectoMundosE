@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import axios from 'axios';
+import contactimage from '../../images/contact-image.png';
 //import './style.css'
 
 function Contact() {
@@ -27,44 +28,29 @@ function Contact() {
         .catch( error => console.log(error))
     }
 
-    // const handleChangeName = function (event) {
-    //     const value =  event.target.value
-    //     setUserInput({...userInput, name: value})
-    // }
-
-    // const handleChangeEmail = function (event) {
-    //     const value =  event.target.value
-    //     setUserInput({...userInput, email: value})
-    // }
-
-    // const handleChangePhone = function (event) {
-    //     const value =  event.target.value
-    //     setUserInput({...userInput, phone: value})
-    // }
-
-    // DOT NOTATION Y BRACKET NOTATION
-    // object.name
-    // object["name"]
-    // let property = "name"
-    // object[property]
-
     return (
-        <section>
-        <h1>Contact</h1>
+        <section id="greysection">
+        <div id="greyerdiv">
+        <div id="imagediv">
+        <img id="contactimage" src={contactimage}></img>
+        </div>
+        <div id="formdiv">
+        <h2 id="h2contact">Get in touch</h2>
+        <h2 id="h2orangec">We are hiring!</h2>
         <form onSubmit={handleSubmit}>
             <div className="form-group">
-            <label htmlFor="name">Nombre</label>
+            <label htmlFor="name"></label>
             <input
                 onChange={handleChange}
                 type="text"
                 className="form-control"
                 id="name"
-                placeholder="Nombre"
+                placeholder="Name"
                 value={userInput.name}
             />
             </div>
             <div className="form-group">
-            <label htmlFor="email">Email address</label>
+            <label htmlFor="email"></label>
             <input
                 onChange={handleChange}
                 type="email"
@@ -75,7 +61,7 @@ function Contact() {
             />
             </div>
             <div className="form-group">
-            <label htmlFor="phone">Phone</label>
+            <label htmlFor="phone"></label>
             <input
                 onChange={handleChange}
                 type="text"
@@ -87,19 +73,23 @@ function Contact() {
             />
             </div>
             <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message"></label>
             <textarea
                 onChange={handleChange}
+                placeholder="Message"
                 className="form-control"
                 id="message"
                 rows="3"
                 value={userInput.message}
             ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary submitForm">Submit</button>
+            <button id="buttonform" type="submit" className="btn btn-primary submitForm">Send</button>
+            
         </form>
         {showAlert && <div className="alert alert-success">Mensaje enviado correctamente</div>}
-
+        
+        </div>
+        </div>
         </section>
   );
 }

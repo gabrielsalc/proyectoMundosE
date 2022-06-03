@@ -5,38 +5,30 @@ import Services from "./views/Services";
 import Contact from "./views/Contact";
 import Products from "./views/Products";
 import Footer from "./views/Footer";
+import bootstrap from 'bootstrap';
+//import "./styles/app.css";
 import "./index.scss";
-import "./styles/app.css";
-import "./styles/app.scss";
-import "./index.scss";
+
 
 
 function App() {
   return (
-    <div class="container">
-      <div className="row section-landing">
-        <div className="row section-navbar section-navbar">
-          <Navbar/>
-        </div>
-        <div className="row landing-content" id="landing">
-          <div className="col-1">
-          </div>
-          <div className="col-8">
-            <Landing/>
-          </div>
-          <div className="col-3">
-          </div>
-        </div>
-      </div>
-      <div id="aboutlink"></div>
-      <About/>
-      <div id="productslink"></div>
-      <Products/>
-      <div id="serviceslink"></div>
-      <Services/>
-      <div id="contactlink"></div>
-      <Contact/>
-      <Footer/>
+  <div>
+  <div id="arriba">
+  <Navbar/>
+  </div>
+  <div id="home">
+  <Landing/>
+  </div>
+  <div id="aboutlink"></div>
+  <About/>
+  <div id="productslink"></div>
+  <Products/>
+  <div id="serviceslink"></div>
+  <Services/>
+  <div id="contactlink"></div>
+  <Contact/>
+  <Footer/>
     </div>
   );
 }
