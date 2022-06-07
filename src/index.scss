@@ -325,8 +325,8 @@ body{
     height: 100vh;
     background-color: #F2F4F1;
     margin-left: -1.3vw;
-    padding-left: 200px;
-    padding-right: 100px;
+    padding-left: 7vh;
+    padding-right: 7vh;
     padding-bottom: 100px;
 }
 #imagediv{
@@ -368,7 +368,7 @@ body{
     padding-top: 6em;
     margin-bottom: 1px;
     padding-bottom: 1px;
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
 #h2orangec{
@@ -381,13 +381,22 @@ body{
     margin-bottom: 100px;
 }
 #alerta{
-    margin-top: 20px;
+    margin-top: 1vh;
 }
 #footer{
-    margin-top: 1000000000px;
-    background-color: red;
-    width: 1920px;
-    height: 100px;
+    margin-top: 0px;
+    background-color: #343434;
+    width: 100vw;
+    height: 15vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+}
+#afooter{
+    float:right;
+}
+#footerh4{
+    
+    color:#DCE1DA;
 }
 
 }
