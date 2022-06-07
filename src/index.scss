@@ -312,10 +312,10 @@ body{
     position: relative;
     background-image: url('../src/images/contact-image.png');
     background-repeat: no-repeat;
-    background-size: 40vw;
+    background-size: 45vw;
     height: 100vh;
-    background-position-x: 50vw;
-    background-position-y: 30vh;
+    background-position-x:48vw;
+    background-position-y: 25vh;
 }
 #formdiv{
     position: absolute;
@@ -325,8 +325,8 @@ body{
     height: 100vh;
     background-color: #F2F4F1;
     margin-left: -1.3vw;
-    padding-left: 7vh;
-    padding-right: 7vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
     padding-bottom: 100px;
 }
 #imagediv{
@@ -381,21 +381,28 @@ body{
     margin-bottom: 100px;
 }
 #alerta{
-    margin-top: 1vh;
+    color: #343434;
+    margin-top: 2vh;
+    width: 15vw;
+    background-color: #DCE1DA;
+    border-color: #DCE1DA;
 }
 #footer{
     margin-top: 0px;
     background-color: #343434;
     width: 100vw;
     height: 15vh;
-    padding-left: 7vh;
-    padding-right: 7vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 6vh;
 }
 #afooter{
+    margin-top: -4vh;
     float:right;
 }
 #footerh4{
-    
+    margin: 0px;
+    width: 30vw;
     color:#DCE1DA;
 }
 
