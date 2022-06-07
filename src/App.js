@@ -15,7 +15,7 @@ function App() {
   return (
   <div>
   <div id="arriba">
-  <Navbar/>
+ <Navbar/>
   </div>
   <div id="home">
   <Landing/>
@@ -28,6 +28,7 @@ function App() {
   <Services/>
   <div id="contactlink"></div>
   <Contact/>
+  <div id="footerlink"></div>
   <Footer/>
     </div>
   );

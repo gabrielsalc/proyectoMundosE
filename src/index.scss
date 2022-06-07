@@ -16,7 +16,7 @@ $accordion-button-active-color: #5F6368;
     background-repeat: no-repeat;
     background-size: 100%;
     height: 20%;
-    width: 1920px !important;
+    //width: 1920px !important;
     text-align: center;
     color: white;
     padding-bottom: 4.7em !important;
@@ -72,7 +72,7 @@ $accordion-button-active-color: #5F6368;
     font: Roboto;
     color: white;
     height: 984px;
-    width: 100% !important;
+    //width: 100% !important;
     background-image: url('../src/images/landing.png');
     background-color: transparent;
     background-position: center;
@@ -208,22 +208,22 @@ $accordion-button-active-color: #5F6368;
 
 #greydiv{
     position: absolute;
-    float:right;
-    height:1000px;
-    width: 800px;
+    float: right !important;
+    height:100%;
+    width: 40%;
     background-color: #DCE1DA;
     z-index: -1;
-    margin-left: 36em;
+    margin-left: 35%;
 }
 #orangediv{
     position:absolute;
     z-index: 1;
-    width:471px;
-    height:301px;
+    width:30%;
+    height:30%;
     background-color:#E0752F;
-    float: left;
-    margin-top: 459px;
-    margin-left: 434px;
+    float: right;
+    margin-top:24.65%;
+    margin-left: 18.76%
 }
 #p1products{
     font: Roboto;
@@ -256,7 +256,14 @@ $accordion-button-active-color: #5F6368;
     margin-top: 50px;
     padding-right: 100px;
 }
-
+.carousel-control-prev-icon{
+    margin-top: 280px;
+    background-image: url('../src/images/left.svg');
+}
+.carousel-control-next-icon{
+    background-image: url('../src/images/right.svg');
+    margin-top: 280px;
+}
 //SERVICES
 
 .section-services{
@@ -362,6 +369,16 @@ $accordion-button-active-color: #5F6368;
     color: #E0752F !important;
     margin-bottom: 100px;
 }
+#alerta{
+    margin-top: 20px;
+}
+#footer{
+    margin-top: 1000000000px;
+    background-color: red;
+    width: 1920px;
+    height: 100px;
+}
+
 }
 
 @media screen and (max-width: 1400px){
@@ -372,7 +389,7 @@ $accordion-button-active-color: #5F6368;
         background-repeat: no-repeat;
         background-size: 100%;
         height: 95px;
-        width: 1366px !important;
+        //width: 1366px !important;
         text-align: center;
         color: white;
         padding-bottom: 0em;
@@ -710,7 +727,7 @@ $accordion-button-active-color: #5F6368;
             background-repeat: no-repeat;
             background-size: 200%;
             height: 200px;
-            width: 1200px !important;
+            //width: 1200px !important;
             text-align: center;
             color: white;
             padding-bottom: 0em;

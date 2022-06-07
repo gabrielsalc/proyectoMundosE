@@ -26,15 +26,16 @@ function Contact() {
             setUserInput({name: "", email: "", precio: "", descripcion: ""})
         })
         .catch( error => console.log(error))
+        setShowAlert(true)
     }
 
     return (
-        <section id="greysection">
-        <div id="greyerdiv">
-        <div id="imagediv">
+        <section id="greysection" className="container-fluid">
+        <div id="greyerdiv" className="container-fluid principal">
+        <div id="imagediv" className="container-fluid principal">
         <img id="contactimage" src={contactimage}></img>
         </div>
-        <div id="formdiv">
+        <div id="formdiv" className="container-fluid principal">
         <h2 id="h2contact">Get in touch</h2>
         <h2 id="h2orangec">We are hiring!</h2>
         <form onSubmit={handleSubmit}>
@@ -66,9 +67,9 @@ function Contact() {
                 onChange={handleChange}
                 type="text"
                 className="form-control"
-                id="phone"
+                id="precio"
                 placeholder="Phone"
-                value={userInput.phone}
+                value={userInput.precio}
 
             />
             </div>
@@ -78,15 +79,15 @@ function Contact() {
                 onChange={handleChange}
                 placeholder="Message"
                 className="form-control"
-                id="message"
+                id="descripcion"
                 rows="3"
-                value={userInput.message}
+                value={userInput.descripcion}
             ></textarea>
             </div>
             <button id="buttonform" type="submit" className="btn btn-primary submitForm">Send</button>
             
         </form>
-        {showAlert && <div className="alert alert-success">Mensaje enviado correctamente</div>}
+        {showAlert && <div id="alerta" className="alert alert-success">Mensaje enviado correctamente</div>}
         
         </div>
         </div>

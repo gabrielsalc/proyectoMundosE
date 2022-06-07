@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section class="principal">
+    <section className="container-fluid principal">
       <div id="bordenaranja">
         <p></p>
         <p></p>
