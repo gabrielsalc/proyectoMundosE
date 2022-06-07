@@ -8,6 +8,11 @@ $accordion-button-active-color: #5F6368;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
+body{
+    margin: 0;
+    font-family: 'Roboto', 'Poppins';
+
+}
 //NAVBAR
 @media screen and (max-width: 1950px){
 
@@ -15,17 +20,13 @@ $accordion-button-active-color: #5F6368;
     background-image: url('../src/images/navbar.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 20%;
+    height: 20vh;
     //width: 1920px !important;
     text-align: center;
     color: white;
     padding-bottom: 4.7em !important;
     font-size: 0.7em;
     border-bottom: 10px !important;
-    border-color: #E0752F;
-}
-#navbardiv{
-    border-bottom: 1000px !important;
     border-color: #E0752F;
 }
 .anavbar{
@@ -58,27 +59,18 @@ $accordion-button-active-color: #5F6368;
     border-top: 25px solid #E0752F;
     padding-top: 0px;
 }
-/*#h2landing{
-    font: Roboto;
-    font-weight: bold;
-    color:white;
-    padding-left: 2em;
-    width: 700px;
-    margin-top: 2em;
-    letter-spacing: 2px;
-}*/
 
 #home{
-    font: Roboto;
+    //font-family: 'Poppins';
     color: white;
-    height: 984px;
+    height: 90vh;
     //width: 100% !important;
     background-image: url('../src/images/landing.png');
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% !important;
-    margin-top: 6.9em;
+    background-size: 100vw;
+    margin-top: 11.5vh;
     padding-top:0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -100,7 +92,7 @@ $accordion-button-active-color: #5F6368;
 
 
 #h2landing {
-    font: Poppins;
+    font-family: 'Poppins', semibold;
     font-size: 48px;
     font-weight: bold;
     top: 254px;
@@ -146,7 +138,7 @@ $accordion-button-active-color: #5F6368;
 }
 
 #h2about {
-    font: Poppins;
+    font-family: 'Poppins';
     font-size: 39px;
     font-weight: bold;
     color: black;
@@ -158,7 +150,7 @@ $accordion-button-active-color: #5F6368;
 }
 
 #h2orange{
-    font: Poppins;
+    font-family: 'Poppins';
     font-size: 39px;
     letter-spacing: 0.55px;
     font-weight: bold;
@@ -238,7 +230,7 @@ $accordion-button-active-color: #5F6368;
     
 }
 #h2products{
-    font: Poppins;
+    font-family: 'Poppins';
     color: white;
     font-size: 39px;
     margin-top: 0px;
@@ -308,26 +300,37 @@ $accordion-button-active-color: #5F6368;
     float: right;
     width: 1920px;
 }*/
+#greysection{
+    position: relative;
+    background-image: url('../src/images/contact-image.png');
+    background-repeat: no-repeat;
+    background-size: 40vw;
+    height: 100vh;
+    background-position-x: 50vw;
+    background-position-y: 30vh;
+}
 #formdiv{
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     float: left;
-    width: 1300px;
-    height: 1080px;
+    width: 59vw;
+    height: 100vh;
     background-color: #F2F4F1;
+    margin-left: -1.3vw;
     padding-left: 200px;
     padding-right: 100px;
     padding-bottom: 100px;
 }
-#contact-image{
-    margin-left: -10em;
-}
 #imagediv{
-    width:620px;
+    position: relative;
+    z-index: -1;
+    width:40vw;
     float: right;
+    margin-right: -1.1vw;
     padding-top: 20em;
+    padding-left: -10vw;
     background-color: #DCE1DA;
-    height: 1080px;
+    height: 100vh;
 }
 
 .form-control{
@@ -350,7 +353,7 @@ $accordion-button-active-color: #5F6368;
     margin-top: 3em;
 }
 #h2contact {
-    font: Poppins;
+    font-family: 'Poppins';
     font-size: 39px;
     font-weight: bold;
     color: black;
@@ -361,7 +364,7 @@ $accordion-button-active-color: #5F6368;
 }
 
 #h2orangec{
-    font: Poppins;
+    font-family: 'Poppins';
     font-size: 39px;
     font-weight: bold;
     margin-top: 1px;
@@ -465,7 +468,7 @@ $accordion-button-active-color: #5F6368;
     
     
     #h2landing {
-        font: Poppins;
+        font-family: 'Poppins';
         font-size: 48px;
         font-weight: bold;
         top: 254px;
@@ -512,7 +515,7 @@ $accordion-button-active-color: #5F6368;
     }
     
     #h2about {
-        font: Poppins;
+        font-family: 'Poppins';
         font-size: 39px;
         font-weight: bold;
         color: black;
@@ -524,7 +527,7 @@ $accordion-button-active-color: #5F6368;
     }
     
     #h2orange{
-        font: Poppins;
+        font-family: 'Poppins';
         font-size: 39px;
         letter-spacing: 0.55px;
         font-weight: bold;
@@ -605,7 +608,7 @@ $accordion-button-active-color: #5F6368;
         
     }
     #h2products{
-        font: Poppins;
+        font-family: 'Poppins';
         color: white;
         font-size: 39px;
         margin-top: 0px;
@@ -698,7 +701,7 @@ $accordion-button-active-color: #5F6368;
         margin-top: 3em;
     }
     #h2contact {
-        font: Poppins;
+        font-family: 'Poppins';
         font-size: 39px;
         font-weight: bold;
         color: black;
@@ -709,7 +712,7 @@ $accordion-button-active-color: #5F6368;
     }
     
     #h2orangec{
-        font: Poppins;
+        font-family: 'Poppins';
         font-size: 39px;
         font-weight: bold;
         margin-top: 1px;
@@ -808,7 +811,7 @@ $accordion-button-active-color: #5F6368;
         
         
         #h2landing {
-            font: Poppins;
+            font-family: 'Poppins';
             font-size: 100px;
             font-weight: bold;
             top: 254px;
@@ -853,7 +856,7 @@ $accordion-button-active-color: #5F6368;
         }
         
         #h2about {
-            font: Poppins;
+            font-family: 'Poppins';
             font-size: 100px;
             font-weight: bold;
             color: black;
@@ -866,7 +869,7 @@ $accordion-button-active-color: #5F6368;
         }
         
         #h2orange{
-            font: Poppins;
+            font-family: 'Poppins';
             font-size: 100px;
             letter-spacing: 0.55px;
             font-weight: bold;
@@ -949,7 +952,7 @@ $accordion-button-active-color: #5F6368;
             
         }
         #h2products{
-            font: Poppins;
+            font-family: 'Poppins';
             color: white;
             font-size: 140px;
             margin-top: 0px;
@@ -1047,7 +1050,7 @@ $accordion-button-active-color: #5F6368;
             margin-top: 3em;
         }
         #h2contact {
-            font: Poppins;
+            font-family: 'Poppins';
             font-size: 39px;
             font-weight: bold;
             color: black;
@@ -1058,7 +1061,7 @@ $accordion-button-active-color: #5F6368;
         }
         
         #h2orangec{
-            font: Poppins;
+            font-family: 'Poppins';
             font-size: 39px;
             font-weight: bold;
             margin-top: 1px;

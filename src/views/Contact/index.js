@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import axios from 'axios';
-import contactimage from '../../images/contact-image.png';
+//import contactimage from '../../images/contact-image.png';
 //import './style.css'
 
 function Contact() {
@@ -33,7 +33,6 @@ function Contact() {
         <section id="greysection" className="container-fluid">
         <div id="greyerdiv" className="container-fluid principal">
         <div id="imagediv" className="container-fluid principal">
-        <img id="contactimage" src={contactimage}></img>
         </div>
         <div id="formdiv" className="container-fluid principal">
         <h2 id="h2contact">Get in touch</h2>
