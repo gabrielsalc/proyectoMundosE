@@ -4,7 +4,7 @@ import contactimage from '../../images/contact-image.png';
 //import './style.css'
 
 function Contact() {
-    const [userInput, setUserInput] = useState({name: "", email: "", phone: "", message: ""})
+    const [userInput, setUserInput] = useState({name: "", email: "", precio: "", descripcion: ""})
     const [showAlert, setShowAlert] = useState(false)
     const handleChange = function (event) {
         setShowAlert(false)
@@ -17,13 +17,13 @@ function Contact() {
     const handleSubmit = function (event){
         event.preventDefault()
         axios({
-            url: 'https://jsonplaceholder.typicode.com/posts',
+            url: 'https://proyectomundose.herokuapp.com/api/productos',
             method: 'POST',
             data: userInput
         }).then( result => {
             console.log(result)
             setShowAlert(true)
-            setUserInput({name: "", email: "", phone: "", message: ""})
+            setUserInput({name: "", email: "", precio: "", descripcion: ""})
         })
         .catch( error => console.log(error))
     }
@@ -61,7 +61,7 @@ function Contact() {
             />
             </div>
             <div className="form-group">
-            <label htmlFor="phone"></label>
+            <label htmlFor="precio"></label>
             <input
                 onChange={handleChange}
                 type="text"
@@ -73,7 +73,7 @@ function Contact() {
             />
             </div>
             <div className="form-group">
-            <label htmlFor="message"></label>
+            <label htmlFor="descripcion"></label>
             <textarea
                 onChange={handleChange}
                 placeholder="Message"
