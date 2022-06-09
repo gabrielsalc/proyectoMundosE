@@ -6,9 +6,10 @@ import axios from 'axios';
 function Contact() {
     const [userInput, setUserInput] = useState({name: "", email: "", precio: "", descripcion: ""})
     const [showAlert, setShowAlert] = useState(false)
+    const [showAlertError, setShowAlertError] = useState(false)
     const handleChange = function (event) {
         setShowAlert(false)
-
+        setShowAlertError(false)
         const property = event.target.id
         const value =  event.target.value
         setUserInput({...userInput, [property]: value})
@@ -25,14 +26,17 @@ function Contact() {
             setShowAlert(true)
             setUserInput({name: "", email: "", precio: "", descripcion: ""})
         })
-        .catch( error => console.log(error))
-        setShowAlert(true)
+        .catch( error => {
+            console.log(error)
+        setShowAlertError(true)
+        })
     }
 
     return (
         <section id="greysection" className="container-fluid">
-        <div id="greyerdiv" className="container-fluid principal">
         <div id="imagediv" className="container-fluid principal">
+        </div>
+        <div id="greyerdiv" className="container-fluid principal">
         </div>
         <div id="formdiv" className="container-fluid principal">
         <h2 id="h2contact">Get in touch</h2>
@@ -64,7 +68,7 @@ function Contact() {
             <label htmlFor="precio"></label>
             <input
                 onChange={handleChange}
-                type="text"
+                type="number"
                 className="form-control"
                 id="precio"
                 placeholder="Phone"
@@ -87,8 +91,8 @@ function Contact() {
             
         </form>
         {showAlert && <div id="alerta" className="alert alert-success">Mensaje enviado correctamente</div>}
+        {showAlertError && <div id="alertaError" className="alert alert-success">Mensaje No Enviado. Asegurate de haber llenado todos los campos correctamente.</div>}
         
-        </div>
         </div>
         </section>
   );
