@@ -444,6 +444,9 @@ body{
 
     @media screen and (max-width: 700px){
 
+        html{
+            font-size: 100%;
+        }
 
         #navbar{
             height: 13vh;
@@ -508,7 +511,7 @@ body{
         
         #landingbutton{
             font: Roboto;
-            font-size: 5vw;
+            font-size: 4vh;
             width: 85vw;
             background: #E0752F;
             border-radius: 25px;
@@ -520,7 +523,7 @@ body{
         
         #h2landing {
             font-family: 'Poppins', semibold;
-            font-size: 14vw;
+            font-size: 8vh;
             font-weight: bold;
             width: 90vw;
             padding-top: 20vh;
@@ -535,7 +538,7 @@ body{
         }
         
         #planding{
-            font-size: 7vw;
+            font-size: 4vh;
             margin-top: 1vh;
             width: 80vw;
             height: 30vh;
@@ -556,8 +559,9 @@ body{
         
         #h2about {
             font-family: 'Poppins';
-            font-size: 10vw;
-            width: 85vw;
+            font-size: 6vh;
+            //height: 16vh;
+            width: 50vw;
             font-weight: bold;
             color: black;
             padding-top: 5vh;
@@ -569,19 +573,20 @@ body{
         
         #h2orange{
             font-family: 'Poppins';
-            font-size: 10vw;
-            width: 85vw;
+            font-size: 6vh;
+            //height: 16vh;
+            width: 50vw;
             letter-spacing: 0.55px;
             font-weight: bold;
             margin-top: 1px;
             padding-top: 1px;
             color: #E0752F !important;
-            margin-bottom: 5vh;
+            margin-bottom: 0vh;
             margin-left: 2vw;
         }
             
         #pabout {
-            font-size: 4vw;
+            font-size: 2.2vh;
             font: Roboto;
             letter-spacing: 0.03vw;
             text-align: left;
@@ -622,7 +627,7 @@ body{
             background-color: #F2F4F1;
             height: 100vh;
             width: 60vw;
-            z-index: -1;
+            z-index: 1;
             margin-left: 0px;
         }
         #greydiv{
@@ -631,35 +636,41 @@ body{
             height:100vh;
             width: 40vw;
             background-color: #DCE1DA;
-            z-index: -1;
+            z-index: 1;
             margin-left: 60vw;
         }
         #orangediv{
+            background-image: url('../src/images/section3-image.png');
+            background-repeat: no-repeat;
+            background-size: 300%;
+            background-position: center;
             position:absolute;
             z-index: 1;
-            width:26vw;
-            height:30vh;
-            background-color:#E0752F;
+            width:100vw;
+            height:100vh;
+            background-color:transparent;
             float: right;
-            margin-top: 49.3vh;
-            margin-left: 49vw;
+            margin-top: 0px;
+            margin-left: 0px;
         }
         #p1products{
+            text-align: center;
             font: Roboto;
             font-weight: 500;
-            font-size: 0.9vw;
+            font-size: 4vh;
+            width: 100vw;
             color: white;
-            text-align: left;
             padding: 0px;
-            padding-left: 3.05vw;
+            padding-left: 0vw;
             margin-bottom: 0px;
             margin-top: 3vh;
             
         }
         #h2products{
+            text-align: center;
             font-family: 'Poppins';
             color: white;
-            font-size: 2.2vw;
+            font-size: 8vh;
             margin-top: 0px;
             padding: 0px;
             padding-left: 3vw;
@@ -667,23 +678,28 @@ body{
             letter-spacing: 0.04vw;
         }
         #pproducts{
+            text-align: center;
             font: Roboto, Regular;
             color: white;
-            font-size: 0.9vw;
+            width: 100vw;
+            font-size: 5vh;
             padding: 0px;
             padding-left: 3vw;
+            margin-left: 0vw;
             margin-top: 4vh;
-            padding-right: 5vw;
+            padding-right: 0vw;
         }
         .carousel-control-prev-icon{
             margin-top: 30vh;
             background-image: url('../src/images/left.svg');
-            width: 1.3vw;
+            height: 100vh;
+            width: 0vw;
         }
         .carousel-control-next-icon{
             background-image: url('../src/images/right.svg');
             margin-top: 30vh;
-            width: 1.3vw;
+            width: 0vw;
+            height: 100vh;
         }
         //SERVICES
         
